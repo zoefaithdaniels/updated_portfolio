@@ -1,0 +1,9 @@
+{
+  "name": "updated-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix \"Zoe portfolio\" run dev",
+    "build": "npm --prefix \"Zoe portfolio\" run build",
+    "preview": "npm --prefix \"Zoe portfolio\" run preview"
+  }
+}
