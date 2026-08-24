@@ -51,7 +51,6 @@ function closeMenu() {
         <a v-for="item in navItems" :key="item.href" :href="item.href" @click="closeMenu">
           {{ item.label }}
         </a>
-        <a class="header-cta" href="#contact" @click="closeMenu">Let's Connect</a>
       </nav>
     </div>
   </header>
