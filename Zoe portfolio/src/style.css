@@ -1356,28 +1356,197 @@ p {
   opacity: 0.5;
 }
 
+.projects-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 90% 20%, rgba(255, 228, 236, 0.58), transparent 25%),
+    linear-gradient(135deg, #fff 0%, #fffdfd 58%, #fff8fa 100%);
+}
+
+.projects-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-header {
+  margin-bottom: 22px;
+}
+
+.projects-eyebrow {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 34px;
+  font-size: 0.95rem;
+}
+
+.projects-eyebrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 38px;
+  height: 2px;
+  border-radius: 99px;
+  background: var(--accent);
+}
+
+.projects-header h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+  font-weight: 500;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .project-card {
-  min-height: 240px;
+  position: relative;
+  min-height: 390px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(239, 93, 134, 0.24);
+  border-radius: 14px;
   padding: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
-.project-card span {
+.project-image {
+  height: 165px;
+  overflow: hidden;
+  margin: -24px -24px 0;
+  border-bottom: 1px solid rgba(239, 93, 134, 0.2);
+  background: var(--surface-soft);
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 260ms ease;
+}
+
+.project-image img.project-image-contain {
+  padding: 10px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.035);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  bottom: -45px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  opacity: 0.58;
+}
+
+.project-card:hover {
+  border-color: rgba(239, 93, 134, 0.55);
+  transform: translateY(-4px);
+  box-shadow: 0 22px 48px rgba(44, 27, 34, 0.11);
+}
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.project-number {
+  color: rgba(239, 93, 134, 0.42);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.project-type {
   width: fit-content;
   border-radius: 999px;
   padding: 6px 10px;
   color: var(--accent-strong);
   background: var(--accent-soft);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 800;
+}
+
+.project-card-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.project-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.project-card p {
+  max-width: 300px;
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.project-arrow {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-top: auto;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+a.project-arrow:hover,
+a.project-arrow:focus-visible {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.projects-decoration {
+  position: absolute;
+  top: -110px;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgba(239, 93, 134, 0.28);
+  border-radius: 50%;
+  box-shadow: -30px 28px 0 rgba(255, 228, 236, 0.52);
+}
+
+.projects-dots {
+  position: absolute;
+  left: 4%;
+  bottom: 34px;
+  width: 85px;
+  height: 70px;
+  background-image: radial-gradient(var(--accent) 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.42;
 }
 
 .contact-page {
@@ -1560,6 +1729,7 @@ p {
   color: var(--text);
   background: rgba(255, 255, 255, 0.75);
   font-size: 0.8rem;
+  font-weight: 400;
   outline: none;
   transition: border-color 160ms ease, box-shadow 160ms ease;
 }
@@ -1929,6 +2099,10 @@ p {
   .contact-card,
   .project-card {
     padding: 22px;
+  }
+
+  .project-image {
+    margin: -22px -22px 0;
   }
 
   .contact-intro {
