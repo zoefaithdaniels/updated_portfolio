@@ -185,18 +185,20 @@ p {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
-  background: var(--surface-soft);
+  border-top: 0;
+  background: transparent;
+  backdrop-filter: blur(18px);
 }
 
 .site-footer-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   width: min(1220px, calc(100% - 32px));
   margin: 0 auto;
   padding: 22px 0;
+  text-align: center;
 }
 
 .site-footer p,
@@ -911,10 +913,14 @@ p {
   box-shadow: 0 12px 28px rgba(44, 27, 34, 0.05);
 }
 
+.tools-block {
+  padding: 30px;
+}
+
 .tools-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 11px;
+  gap: 14px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -925,13 +931,13 @@ p {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 48px;
   border: 1px solid rgba(239, 93, 134, 0.2);
   border-radius: 999px;
-  padding: 8px 11px;
+  padding: 10px 14px;
   color: var(--text);
   background: #fff;
-  font-size: 0.76rem;
+  font-size: 0.84rem;
   font-weight: 700;
   box-shadow: 0 7px 15px rgba(44, 27, 34, 0.05);
 }
@@ -939,8 +945,8 @@ p {
 .tools-list li img,
 .tools-list li svg {
   flex: 0 0 auto;
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
   object-fit: contain;
 }
 
@@ -952,8 +958,8 @@ p {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
   border-radius: 4px;
   color: var(--accent);
   background: var(--accent-soft);
@@ -1122,7 +1128,7 @@ p {
   display: grid;
   gap: 18px;
   max-width: 920px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .experience-timeline::before {
@@ -1420,10 +1426,10 @@ p {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 0.85fr) minmax(390px, 1.15fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   max-width: 1080px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-panel {
@@ -1434,6 +1440,7 @@ p {
   padding: 24px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow);
+  height: 100%;
 }
 
 .contact-panel-heading {
@@ -1528,7 +1535,12 @@ p {
 
 .contact-form {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+}
+
+.contact-form-panel {
+  gap: 16px;
+  padding: 20px 22px;
 }
 
 .contact-form label {
@@ -1544,7 +1556,7 @@ p {
   width: 100%;
   border: 1px solid rgba(239, 93, 134, 0.38);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 9px 11px;
   color: var(--text);
   background: rgba(255, 255, 255, 0.75);
   font-size: 0.8rem;
@@ -1553,7 +1565,7 @@ p {
 }
 
 .contact-form textarea {
-  min-height: 105px;
+  min-height: 90px;
   resize: vertical;
 }
 
@@ -1564,7 +1576,11 @@ p {
 }
 
 .contact-submit {
-  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
   border: 0;
   border-radius: 8px;
   color: #fff;
@@ -1581,7 +1597,7 @@ p {
 }
 
 .contact-submit span {
-  margin-left: 8px;
+  margin-left: 0;
 }
 
 .contact-dots {

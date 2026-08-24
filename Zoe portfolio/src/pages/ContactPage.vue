@@ -82,7 +82,6 @@ function sendMessage(event) {
             <span class="contact-heading-icon" aria-hidden="true">➤</span>
             <div>
               <h2>Send me a message</h2>
-              <p>Have a question or want to work together? Fill out the form and I’ll get back to you.</p>
             </div>
           </div>
 

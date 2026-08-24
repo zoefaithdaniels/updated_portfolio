@@ -69,7 +69,6 @@ const tools = [
           <span aria-hidden="true"><Code2 :size="24" /></span>
           <div>
             <h2>Technical skills</h2>
-            <p>Technologies I use to design, develop, and maintain modern web applications.</p>
           </div>
         </header>
 
@@ -89,7 +88,6 @@ const tools = [
           <span aria-hidden="true"><Monitor :size="23" /></span>
           <div>
             <h2>Tools & platforms</h2>
-            <p>Software and platforms I use to build, manage, and deliver solutions.</p>
           </div>
         </header>
 

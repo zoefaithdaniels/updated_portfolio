@@ -68,7 +68,6 @@ function closeMenu() {
   <footer class="site-footer">
     <div class="site-footer-inner">
       <p>© {{ currentYear }} Zoë Daniels</p>
-      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
 </template>
