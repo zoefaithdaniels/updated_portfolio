@@ -442,15 +442,15 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
-  gap: clamp(48px, 7vw, 100px);
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
   align-items: center;
 }
 
 .about-intro {
   width: 100%;
-  max-width: 650px;
-  justify-self: end;
+  max-width: 760px;
+  justify-self: center;
 }
 
 .about-image-space {

@@ -20,8 +20,8 @@ const contactItems = [
   },
   {
     label: 'Website',
-    value: 'dev-zoedaniels.pantheonsite.io/home/',
-    href: 'https://dev-zoedaniels.pantheonsite.io/home/',
+    value: 'zoedaniels.netlify.app',
+    href: 'https://zoedaniels.netlify.app',
     icon: '◎',
   },
   {

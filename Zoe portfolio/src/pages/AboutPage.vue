@@ -4,11 +4,6 @@
     <div class="about-dots about-dots-bottom" aria-hidden="true"></div>
 
     <div class="section-inner about-inner">
-      <div class="about-image-space">
-        <div class="portrait-dots" aria-hidden="true"></div>
-        <img src="/zoe-portrait.png" alt="Zoe Daniels" />
-      </div>
-
       <div class="about-intro">
         <p class="eyebrow about-eyebrow">About me</p>
         <div class="about-copy">

@@ -14,7 +14,7 @@
       </div>
       <div class="hero-art">
         <div class="dot-grid" aria-hidden="true"></div>
-        <img src="/zoe-portrait.png" alt="Portrait of Zoe Daniels" />
+        <img src="/zoe-landing-portrait.png" alt="Portrait of Zoë Daniels" />
       </div>
     </div>
   </section>
